@@ -15,15 +15,15 @@ if #args == 0 then
   shell.run("wget https://raw.githubusercontent.com/" .. username .. "/" .. repository .. "/" .. branch .. "/" .. path .. " " .. destFile)
 else
   for i, arg in ipairs(args) do
-    if i == 1:
+    if i == 1 then
       username = arg
-    elseif i == 2:
+    elseif i == 2 then
       repository = arg
-    elseif i == 3:
+    elseif i == 3 then
       branch = arg()
-    elseif i == 4:
+    elseif i == 4 then
       path = arg
-    elseif i == 5:
+    elseif i == 5 then
       destFile = arg
     end
     

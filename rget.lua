@@ -26,6 +26,7 @@ else
     elseif i == 5 then
       destFile = arg
     end
+  end
     
   shell.run("wget https://raw.githubusercontent.com/" .. username .. "/" .. repository .. "/" .. branch .. "/" .. path .. " " .. destFile)
 end
